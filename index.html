@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Site-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <div class="site-container">
+    <div class="overlay"></div>
+
+    <header class="header">
+      <div class="container header-container">
+        <div class="mobile-menu"><span><a href="#"></a></span></div>
+
+        <nav class="nav">
+          <ul class="nav__ul header-nav">
+            <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Стоимость</a></li>
+          </ul>
+        </nav>
+
+          <a class="header__contacts-tel" href="tel:+7(499)995-55-77">+7 (499) 995-55-77</a>
+
+          <button class="btn-reset btn-call header__contacts-btn btn">Заказать звонок</button>
+
+        <form class="form" name="form" method="post" action="#">
+          <p class="form__name">Ваше имя:
+           <input class="form__name-input" type="text" name="имя" size="20">
+          </p>
+
+          <p class="form__phone">Телефон:
+            <input class="form__phone-input" type="tel" name="телефон" size="20">
+           </p>
+          
+          <input class="form__btn" type="submit" value="Заказать звонок">
+         </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about">
+        <span class="fly__tag fly__tag-bracket">{&nbsp;}</span>
+        <span class="fly__tag fly__tag-div">&lt;div&gt;</span>
+        <span class="fly__tag fly__tag-div2">&lt;div&gt;</span>
+        <span class="fly__tag fly__tag-hash">#</span>
+        <span class="fly__tag fly__tag-tag">&lt;/&gt;</span>
+
+        <div class="container about__container">
+          <div class="about__info">
+            <h1 class="about__info-h1">Дмитрий Алексеев</h1>
+            <span class="about__info-sub">Frontend-разработчик и веб-верстальщик</span>
+            <button class="btn-reset btn-info about__btn btn">Узнать больше</button>
+          </div>
+
+          <img class="about__img" src="img/Photo.png" alt="Дмитрий Алексеев Frontend-разработчик и веб-верстальщик">
+        </div>
+
+        <picture>
+          <source media="(max-width: 576px)" srcset="img/Ellipse_3.png">
+          <source media="(max-width: 1480px)" srcset="img/Ellipse_2.png">
+          <img src="img/Ellipse.png" alt="background Ellipse" class="about__bg">
+        </picture>
+      </section>
+
+      <section class="services">
+        <div class="container services__container">
+          <h2 class="container__heading">
+            Что я делаю
+          </h2>
+
+          <ul class="services__list">
+            <li class="services__list-item"><a href="#" class="services__link">
+              <img src="img/layout.png" alt="вёрстка" class="services__img"><p class="services__descr">
+                Вёрстка лендинг–страниц
+              и сайтов любой сложности
+              </p>
+            </a>
+            </li>
+            <li class="services__list-item"><a href="#" class="services__link">
+              <img src="img/mobile.png" alt="мобильная вёртска" class="services__img"><p class="services__descr">Адаптивная вёрстка под все
+                браузеры и устройства
+              </p>
+              </a>
+            </li>
+            <li class="services__list-item"><a href="#" class="services__link">
+              <img src="img/programming.png" alt="программирование" class="services__img"><p class="services__descr">
+                Frontend–разработка
+              и&nbsp;программирование
+              </p>
+            </a>
+            </li>
+            <li class="services__list-item"><a href="#" class="services__link">
+              <img src="img/rework.png" alt="доработка" class="services__img"><p class="services__descr">
+                Исправление и доработка
+              существующей вёрстки
+              </p>
+            </a>
+            </li>
+          </ul>
+
+          <button class="btn-reset btn-info services__btn btn">Узнать стоимость</button>
+
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="container portfolio__container">
+          <h2 class="container__heading">
+            Примеры моих работ
+          </h2>
+            <div class="slider__container">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/Layer_1.png" class="layout1" alt="Сайт психолога Веры Антоновой">
+                    <p class="layout1__descr">Сайт психолога Веры Антоновой</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Layer_2.png" class="layout2" alt="Сайт магазина детской одежды">
+                    <p class="layout2__descr">Сайт магазина детской одежды</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Layer_3.png" class="layout3" alt="Сайт магазина «Рыболов»">
+                    <p class="layout3__descr">Сайт магазина «Рыболов»</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+  
+          <button class="btn-reset btn-info portfolio__btn btn">Заказать проект</button>
+
+        </div>
+      </section>
+
+      <section class="prices">
+        <span class="fly__tag-bot fly__tag-bracket-prices">{&nbsp;}</span>
+        <span class="fly__tag-bot fly__tag-bracket2-prices">{&nbsp;}</span>
+        <span class="fly__tag-bot fly__tag-div-prices">&lt;div&gt;</span>
+        <span class="fly__tag-bot fly__tag-hash-prices">#</span>
+        <span class="fly__tag-bot fly__tag-tag-prices">&lt;/&gt;</span>
+
+        <div class="container prices__container">
+          <h2 class="prices__container-heading">
+            Адаптивная вёрстка под все устройства
+            и&nbsp;браузеры от 1000 рублей всего за 4 часа.*
+          </h2>
+
+          <p class="prices__container-subtext">
+            * Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,
+            в зависимости от сложности задач.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <nav class="nav">
+          <ul class="nav__ul footer-nav">
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Услуги</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Портфолио</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Стоимость</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__container-contacts">
+          <a class="footer__contacts-tel" href="tel:+7(499)995-55-77">+7 (499) 995-55-77</a>
+          <a class="footer__contacts-mail" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
+        </div>
+
+        <div class="footer__btn__social">
+          <button class="btn-reset btn-call footer__contacts-btn btn">Заказать звонок</button>
+
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://vk.com" target="blanc" class="social-link vk"></a>
+            </li>
+            <li class="social__item">
+              <a href="https://facebook.com" target="blanc" class="social-link fb"></a>
+            </li>
+            <li class="social__item">
+              <a href="https://twitter.com" target="blanc" class="social-link tw"></a>
+            </li>
+            <li class="social__item">
+              <a href="https://instagram.com" target="blanc" class="social-link inst"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__black-bar">
+        <span class="copyright">© Дмитрий Алексеев, 2016 – 2018</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+</body>
+</html>
