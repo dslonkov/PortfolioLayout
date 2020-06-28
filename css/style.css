@@ -100,10 +100,18 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 	margin-right: 28px;
+	padding-bottom: 2px;
+	transition: all 0.3s;
 }	
 
 .nav__link:hover {
 	color: #fc557c;
+	border-bottom: 1px solid #fc557c;
+}
+
+.nav__link:focus {
+	color: #fc557c;
+	border-bottom: 1px solid #fc557c;
 }
 
 .header__contacts-tel {
@@ -129,12 +137,28 @@ p {
 	z-index: 20;
 	left: 50%;
 	transform: translate(-50%, 0);
-	top: 30%;
+	top: 10%;
 	width: 300px;
 	height: auto;
 	overflow: auto;
 	background-color: #8993ad;
 	padding: 50px 0;
+}
+
+.form__sent {
+	display: none;
+	position: fixed;
+	z-index: 20;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 10%;
+	width: 300px;
+	height: auto;
+	overflow: auto;
+	background-color: #8993ad;
+	padding: 50px 0;
+	font-size: 25px;
+	text-align: center;
 }
 
 .form__name {
@@ -163,7 +187,11 @@ p {
 }
 
 .form__btn:hover {
-	outline: #f53f4f;
+	background-color: black;
+	color: #ff4e2e;;
+}
+
+.form__btn:focus	{
 	background-color: black;
 	color: #ff4e2e;;
 }
@@ -197,7 +225,10 @@ p {
 }
 
 .btn-call:hover {
-	outline: #f53f4f;
+	background-color: black;
+}
+
+.btn-call:focus {
 	background-color: black;
 }
 
@@ -208,7 +239,7 @@ p {
 }
 
 .about__info {
-	padding-top: 140px;
+	padding-top: 130px;
 }
 
 .about__info-h1 {
@@ -236,11 +267,14 @@ p {
 }
 
 .about__btn {
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .btn-info:hover {
-	outline: #f53f4f;
+	background-color: black;
+}
+
+.btn-info:focus {
 	background-color: black;
 }
 
@@ -385,7 +419,6 @@ p {
 	margin: 0 auto;
 }
 
-
 .swiper-button-prev:after,
 .swiper-button-next:after {
 	display: none;
@@ -399,6 +432,11 @@ p {
 	border-radius: 100%;
 	background-position: center;
 	background-color: #ffffff;
+}
+
+.swiper-button-prev,
+.swiper-button-next:hover {
+	cursor: pointer;
 }
 
 .swiper-pagination {
@@ -613,8 +651,8 @@ p {
 	background: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 35px;
-	height: 21px;
+	width: 40px;
+	height: 30px;
 }
 
 .fb {
@@ -622,8 +660,8 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: -62px;
-	width: 16px;
-	height: 28px;
+	width: 20px;
+	height: 30px;
 }
 
 .tw {
@@ -631,7 +669,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: -93px;
-	width: 29px;
+	width: 35px;
 	height: 25px;
 }
 
@@ -640,7 +678,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: -143px;
-	width: 25px;
+	width: 35px;
 	height: 25px;
 }
 
