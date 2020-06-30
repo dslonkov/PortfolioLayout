@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   $('input[type="tel"]').inputmask({"mask":"(+9) (999) 999 9999"});
 
-  $('form').each( function() {
+  $('form').each(function() {
     $(this).validate({
       rules: {
         телефон: {
@@ -95,4 +95,21 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('form').submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: 'POST',
+			url: 'mail.php',
+			data: th.serialize()
+		}).done(function() {
+			alert('Заявка отправлена!');
+			setTimeout(function() {
+        th.fadeOut();
+        overlay.css('display', 'none');
+				th.trigger("reset");
+			}, 100);
+		});
+		return false;
+	});
 });

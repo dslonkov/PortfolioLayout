@@ -39,15 +39,19 @@
           <button class="btn-reset btn-call header__contacts-btn btn">Заказать звонок</button>
 
         <form class="form" name="form" method="post" action="#">
+          <input type="hidden" name="project_name" value="Site Portfolio">
+          <input type="hidden" name="admin_email" value="slonkovd@gmail.com">
+          <input type="hidden" name="form_subject" value="Request">
+
           <p class="form__name">Ваше имя:
-           <input class="form__name-input" type="text" name="имя" size="20">
+           <input class="form__name-input" type="text" name="Имя" size="20" required>
           </p>
 
           <p class="form__phone">Телефон:
-            <input class="form__phone-input" type="tel" name="телефон" size="20">
+            <input class="form__phone-input" type="tel" name="Телефон" size="20" required>
            </p>
           
-          <input class="form__btn" type="submit" value="Заказать звонок">
+          <button class="form__btn" data-target="#request">Заказать звонок</button>
          </form>
       </div>
     </header>

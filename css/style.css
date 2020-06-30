@@ -37,10 +37,12 @@ img {
 	border: none;
 	background: transparent;
 	cursor: pointer;
+	outline: none;
 }
 
 a {
 	text-decoration: none; 
+	outline: none
 }
 
 p {
@@ -75,7 +77,7 @@ p {
 	margin: 0 auto;
 }
 .header {
-	padding: 35px 0;
+	padding: 30px 0;
 }
 
 .header-container {
@@ -138,7 +140,7 @@ p {
 	left: 50%;
 	transform: translate(-50%, 0);
 	top: 10%;
-	width: 300px;
+	width: 400px;
 	height: auto;
 	overflow: auto;
 	background-color: #8993ad;
@@ -163,19 +165,19 @@ p {
 
 .form__name {
 	margin-bottom: 50px;
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
 }
 
 .form__phone {
 	margin-bottom: 50px;
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
 }
 
 .form__btn {
 	display: block;
-	width: 150px;
+	width: 200px;
 	height: 50px;
 	margin: 0 auto;
 	text-align: center;
@@ -183,6 +185,7 @@ p {
 	background-color: #ff4e2e;
 	color: #fff;
 	font-weight: 400;
+	font-size: 20px;
 	transition: background-color 1s;
 }
 
@@ -239,7 +242,7 @@ p {
 }
 
 .about__info {
-	padding-top: 130px;
+	padding-top: 145px;
 }
 
 .about__info-h1 {
@@ -253,7 +256,7 @@ p {
 	color: #8993ad;
 	font-size: 25px;
 	font-weight: 400;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .btn-info {
@@ -267,7 +270,7 @@ p {
 }
 
 .about__btn {
-	margin-top: 40px;
+	margin-top: 45px;
 }
 
 .btn-info:hover {
@@ -312,7 +315,7 @@ p {
 	height: 50px;
 	font-size: 43px;
 	line-height: 38.97px;
-	left: 130px;
+	left: 185px;
 	top: 40px;
 }
 
@@ -322,8 +325,8 @@ p {
 	height: 42px;
 	font-size: 55px;
 	line-height: 49.43px;
-	left: 110px;
-	top: 300px;
+	left: 300px;
+	top: 270px;
 }
 
 .fly__tag-div {
@@ -332,8 +335,8 @@ p {
 	height: 26px;
 	font-size: 29px;
 	line-height: 26.07px;
-	left: 550px;
-	top: 100px;
+	left: 840px;
+	top: 70px;
 }
 
 .fly__tag-div2 {
@@ -342,8 +345,8 @@ p {
 	height: 39px;	
 	font-size: 35px;
 	line-height: 31.75px;
-	left: 620px;
-	top: 500px;
+	left: 1000px;
+	top: 440px;
 }
 
 .fly__tag-tag {
@@ -352,12 +355,12 @@ p {
 	height: 36px;
 	font-size: 38px;
 	line-height: 33.97px;
-	left: 200px;
-	top: 550px;
+	left: 430px;
+	top: 575px;
 }
 
 .services {
-	margin-bottom: 160px;
+	margin-bottom: 195px;
 }
 
 .container__heading {
@@ -373,7 +376,7 @@ p {
 .services__list {
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 96px;
+	margin-bottom: 100px;
 }
 
 .services__list-item {
@@ -484,14 +487,14 @@ p {
 	position: relative;
 	left: 50%;
 	transform: translate(-50%, 0);
-	margin-top: 100px;
+	margin-top: 95px;
 }
 
 .prices {
 	position: relative;
 	background-color: #ebebeb;
 	background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
-	padding: 86px 250px;
+	padding: 80px 500px;
 }
 
 .prices__container-heading {
@@ -499,7 +502,7 @@ p {
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 60px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	text-align: left;
 }
 
@@ -525,8 +528,8 @@ p {
 	height: 50px;
 	font-size: 43px;
 	line-height: 38.97px;
-	top: 40px;
-	left: 100px;
+	top: 70px;
+	left: 180px;
 }
 
 .fly__tag-hash-prices {
@@ -535,8 +538,8 @@ p {
 	height: 42px;
 	font-size: 55px;
 	line-height: 49.43px;
-	top: 250px;
-	left: 150px;
+	top: 260px;
+	left: 300px;
 }
 
 .fly__tag-div-prices {
@@ -545,8 +548,8 @@ p {
 	height: 39px;
 	font-size: 35px;
 	line-height: 31.75px;
-	bottom: 30px;
-	right: 300px;
+	bottom: 20px;
+	right: 465px;
 }
 
 .fly__tag-bracket2-prices {
@@ -556,7 +559,7 @@ p {
 	font-size: 48px;
 	line-height: 42.86px;
 	bottom: 50px;
-	right: 50px;
+	right: 160px;
 }
 
 .fly__tag-tag-prices {
@@ -565,18 +568,18 @@ p {
 	height: 36px;
 	font-size: 38px;
 	line-height: 33.97px;
-	top: 70px;
-	right: 100px;
+	top: 85px;
+	right: 260px;
 }
 
 .footer {
-	margin-top: 86px;
+	margin-top: 76px;
 }
 
 .footer__container {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .footer-nav {
@@ -627,7 +630,7 @@ p {
 
 .footer__contacts-btn {
 	width: 250px;
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 }
 
 .social {

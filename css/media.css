@@ -1,4 +1,4 @@
-@media (max-width: 1480px) {
+@media (max-width: 1680px) {
    .about__img {
     margin-right: 0;
   }
@@ -15,6 +15,9 @@
     margin-top: 28px;
   }
 
+  .prices {
+    padding: 86px 0px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -250,6 +253,62 @@
   .about__btn {
     width: 500px;
   }
+
+  .footer {
+    margin-top: 50px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .footer__container-contacts {
+    margin-top: 50px;
+  }
+
+  .footer-nav__item {
+    font-size: 15px;
+  }
+
+  .footer-nav__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer__contacts-tel {
+    color: #8993ad;
+    font-size: 20px;
+    background: url("../img/mobile__footer-phone.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__contacts-mail {
+    background: url("../img/mobile__footer-mail.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    color: #8993ad;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .footer__contacts-btn {
+    width: 280px;
+    height: 55px;
+    background-color: #ff4e2e;
+    color: #fff;
+  }
+
+  .footer__black-bar {
+    padding: 20px;
+  }
+
+  .copyright {
+    color: #ffffff;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 576px) { 
@@ -269,22 +328,25 @@
   }
 
   .form {
-    width: 200px;
-    height: 270px;
+    width: 300px;
+    height: 300px;
+    padding: 20px 0;
   }
 
   .form__name {
     margin-bottom: 40px;
-    font-size: 14px;
+    font-size: 20px;
+    
   }
   
   .form__phone {
     margin-bottom: 40px;
-    font-size: 14px;
+    font-size: 20px;
+    
   }
   
   .form__btn {
-    width: 150px;
+    width: 200px;
     height: 40px;
   }  
 
@@ -486,59 +548,8 @@
     display: none;
   }
 
-  .footer {
-    margin-top: 50px;
-  }
-
   .footer__container {
-    flex-direction: column;
-    padding-bottom: 50px;
-  }
-
-  .footer__container-contacts {
-    margin-top: 50px;
-  }
-
-  .footer-nav__item {
-    font-size: 15px;
-  }
-
-  .footer-nav__item:last-child {
-    margin-bottom: 0;
-  }
-
-  .footer__contacts-tel {
-    color: #8993ad;
-    font-size: 20px;
-    background: url("../img/mobile__footer-phone.png");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    margin-bottom: 20px;
-  }
-
-  .footer__contacts-mail {
-    background: url("../img/mobile__footer-mail.png");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    color: #8993ad;
-    font-size: 20px;
-    margin-bottom: 25px;
-  }
-
-  .footer__contacts-btn {
-    width: 280px;
-    height: 55px;
-    background-color: #ff4e2e;
-    color: #fff;
-  }
-
-  .footer__black-bar {
-    padding: 20px;
-  }
-
-  .copyright {
-    color: #ffffff;
-    font-size: 12px;
+    align-items: flex-start;
   }
 }
 
