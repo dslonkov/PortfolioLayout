@@ -21,6 +21,7 @@ var mySwiper = new Swiper ('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
       },
     },
     576: {  
@@ -28,6 +29,7 @@ var mySwiper = new Swiper ('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
       },
     },
     320: {  
@@ -35,6 +37,7 @@ var mySwiper = new Swiper ('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
       },
     }
 
@@ -73,43 +76,30 @@ $(document).ready(function() {
     $('.mobile-menu, .header-nav').toggleClass('active');
     });
 
-  $('input[type="tel"]').inputmask({"mask":"(+9) (999) 999 9999"});
-
-  $('form').each(function() {
-    $(this).validate({
-      rules: {
-        телефон: {
-          required: true
-        },
-          имя: {
-            required: true
-          },
-      },
-      messages: {
-        телефон: {
-          required: "Введите номер телефона!"
-        },
-        имя: {
-          required: "Введите имя!"
-        }
-      }
-    });
-  });
+  $('input[type="tel"]').inputmask({"mask":"(+7) (999) 999 9999"});
 
   $('form').submit(function() {
-		var th = $(this);
-		$.ajax({
-			type: 'POST',
-			url: 'mail.php',
-			data: th.serialize()
-		}).done(function() {
-			alert('Заявка отправлена!');
-			setTimeout(function() {
-        th.fadeOut();
-        overlay.css('display', 'none');
-				th.trigger("reset");
-			}, 100);
-		});
-		return false;
+    var th = $(this);
+    $.ajax({
+      type: 'POST',
+      url: 'mail.php',
+      data: th.serialize()
+    }).done(function() {
+      th.trigger('reset');
+      th.fadeOut();
+      $('.thanks__popup').fadeIn();
+    });
+    return false;
+  });
+  
+
+  $('.thanks__popup-btn').click(function() {
+    $('.thanks__popup').fadeOut();
+  });
+
+  $(document).mouseup(function (e){ 
+		if (!$('.thanks__popup').is(e.target) && $('.thanks__popup').has(e.target).length === 0) { 
+      $('.thanks__popup').fadeOut(); 
+		}
 	});
 });

@@ -26,6 +26,30 @@
     margin: 0 auto;
   }
 
+  .form {
+    width: 300px;
+    height: 300px;
+    padding: 20px 0;
+  }
+
+  .form__name {
+    margin-bottom: 40px;
+    font-size: 20px;
+    
+  }
+  
+  .form__phone {
+    margin-bottom: 40px;
+    font-size: 20px;
+    
+  }
+  
+  .form__btn {
+    width: 200px;
+    height: 40px;
+  }  
+
+
   .mobile-menu {
     display: block;
     position: relative;
@@ -77,16 +101,23 @@
   }
 
   .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff4e2e;
+    margin-top: 20px;
     position: absolute;
-    display: block;
-    background-color: transparent;
     z-index: 3;
     left: -100%;
     padding-top: 30px;
     padding-left: 50px;
-    width: 100%;
+    width: 50%;
     overflow-y: scroll;
-    transition: all 0.3s ease 0s;
+    transition: 0.3s ease 0s;
+  }
+
+  .nav__item {
+    margin-bottom: 20px;
   }
 
   .nav__link {
@@ -208,7 +239,7 @@
   .swiper-pagination-bullet {
     width: 18px;
     height: 18px;
-    background-color: #ebebeb;
+    background-color: #8993ad;
     margin-right: 30px !important;
   }
 
@@ -242,6 +273,11 @@
     align-items: center;
   }
 
+  .thanks__popup {
+    width: 300px;
+    padding: 40px 0;
+  }
+
   .about__bg {
     top: 153px;
   }
@@ -268,8 +304,8 @@
     margin-top: 50px;
   }
 
-  .footer-nav__item {
-    font-size: 15px;
+  .footer-nav__link {
+    font-size: 20px;
   }
 
   .footer-nav__item:last-child {
@@ -327,29 +363,6 @@
     margin: 0;
   }
 
-  .form {
-    width: 300px;
-    height: 300px;
-    padding: 20px 0;
-  }
-
-  .form__name {
-    margin-bottom: 40px;
-    font-size: 20px;
-    
-  }
-  
-  .form__phone {
-    margin-bottom: 40px;
-    font-size: 20px;
-    
-  }
-  
-  .form__btn {
-    width: 200px;
-    height: 40px;
-  }  
-
   .header__contacts-tel {
     font-size: 18px;
   }
@@ -378,14 +391,28 @@
   }
 
   .header-nav {
-    display: flex;
-    flex-direction: column;
     padding-left: 10px;
     padding-top: 10px;
+    margin-top: 20px;
+    width: 70%;
+  }
+
+  .nav__item {
+    margin-bottom: 15px;
   }
 
   .nav__link {
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .nav__link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .nav__link:focus {
+    color: #fff;
+    border-bottom: 1px solid #fff;
   }
 
   .about__bg {

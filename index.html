@@ -28,9 +28,9 @@
 
         <nav class="nav">
           <ul class="nav__ul header-nav">
-            <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Стоимость</a></li>
+            <li class="nav__item"><a href="#services-anchor" class="nav__link">Услуги</a></li>
+            <li class="nav__item"><a href="#portfolio-anchor" class="nav__link">Портфолио</a></li>
+            <li class="nav__item"><a href="#prices-anchor" class="nav__link">Стоимость</a></li>
           </ul>
         </nav>
 
@@ -44,15 +44,21 @@
           <input type="hidden" name="form_subject" value="Request">
 
           <p class="form__name">Ваше имя:
-           <input class="form__name-input" type="text" name="Имя" size="20" required>
+           <input class="form__name-input" type="text" name="Имя" size="20" required="required">
           </p>
 
           <p class="form__phone">Телефон:
-            <input class="form__phone-input" type="tel" name="Телефон" size="20" required>
+            <input class="form__phone-input" type="tel" name="Телефон" size="20" required="required">
            </p>
           
           <button class="form__btn" data-target="#request">Заказать звонок</button>
          </form>
+
+         <div class="thanks__popup">
+           <h2 class="thanks__popup-heading">Спасибо за заявку!</h2>
+
+           <button class="thanks__popup-btn btn-reset">Закрыть</button>
+         </div>
       </div>
     </header>
 
@@ -81,7 +87,7 @@
         </picture>
       </section>
 
-      <section class="services">
+      <section class="services" id="services-anchor">
         <div class="container services__container">
           <h2 class="container__heading">
             Что я делаю
@@ -122,7 +128,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio-anchor">
         <div class="container portfolio__container">
           <h2 class="container__heading">
             Примеры моих работ
@@ -156,7 +162,7 @@
         </div>
       </section>
 
-      <section class="prices">
+      <section class="prices" id="prices-anchor">
         <span class="fly__tag-bot fly__tag-bracket-prices">{&nbsp;}</span>
         <span class="fly__tag-bot fly__tag-bracket2-prices">{&nbsp;}</span>
         <span class="fly__tag-bot fly__tag-div-prices">&lt;div&gt;</span>
@@ -181,9 +187,9 @@
       <div class="container footer__container">
         <nav class="nav">
           <ul class="nav__ul footer-nav">
-            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Услуги</a></li>
-            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Портфолио</a></li>
-            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Стоимость</a></li>
+            <li class="nav__item footer-nav__item"><a href="#services-anchor" class="nav__link footer-nav__link">Услуги</a></li>
+            <li class="nav__item footer-nav__item"><a href="#portfolio-anchor" class="nav__link footer-nav__link">Портфолио</a></li>
+            <li class="nav__item footer-nav__item"><a href="#prices-anchor" class="nav__link footer-nav__link">Стоимость</a></li>
           </ul>
         </nav>
 

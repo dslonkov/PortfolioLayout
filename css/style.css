@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -214,6 +215,50 @@ p {
 	display: inline-block;
 }
 
+.thanks__popup {
+	display: none;
+	position: fixed;
+	z-index: 20;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 10%;
+	width: 400px;
+	height: auto;
+	overflow: auto;
+	background-color: #8993ad;
+	padding: 50px 0;
+}
+
+.thanks__popup-heading {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 35px;
+}
+
+.thanks__popup-btn {
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #f82370;
+	background-color: #ff4e2e;
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	transition: background-color 1s;
+}
+
+.thanks__popup-btn:hover {
+	background-color: black;
+	color: #ff4e2e;;
+}
+
+.thanks__popup-btn:focus	{
+	background-color: black;
+	color: #ff4e2e;;
+}
+
 .overlay	{
 	position: fixed;
 	width: 100%;
@@ -325,8 +370,8 @@ p {
 	height: 42px;
 	font-size: 55px;
 	line-height: 49.43px;
-	left: 300px;
-	top: 270px;
+	top: 305px;
+	left: 200px;
 }
 
 .fly__tag-div {
@@ -528,11 +573,12 @@ p {
 	height: 50px;
 	font-size: 43px;
 	line-height: 38.97px;
-	top: 70px;
+	top: 50px;
 	left: 180px;
 }
 
 .fly__tag-hash-prices {
+	display: none;
 	transform: rotate(10deg);
 	width: 35px;
 	height: 42px;
@@ -563,13 +609,14 @@ p {
 }
 
 .fly__tag-tag-prices {
+	display: none;
 	transform: rotate(-20deg);
 	width: 53px;
 	height: 36px;
 	font-size: 38px;
 	line-height: 33.97px;
-	top: 85px;
-	right: 260px;
+	top: 300px;
+	right: 350px;
 }
 
 .footer {
@@ -662,7 +709,7 @@ p {
 	background: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-x: -62px;
+	background-position-x: -65px;
 	width: 20px;
 	height: 30px;
 }
