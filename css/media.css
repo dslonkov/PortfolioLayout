@@ -121,7 +121,7 @@
   }
 
   .nav__link {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .header-nav.active {
@@ -345,9 +345,17 @@
     color: #ffffff;
     font-size: 12px;
   }
+
+  .form {
+    top: 10%;
+  }
+
+  .thanks__popup {
+    top: 10%;
+  }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
  .header__contacts-btn {
     font-size: 0;
     background-image: url("../img/mobile-phone.png");

@@ -76,7 +76,7 @@ $(document).ready(function() {
     $('.mobile-menu, .header-nav').toggleClass('active');
     });
 
-  $('input[type="tel"]').inputmask({"mask":"(+7) (999) 999 9999"});
+  $('input[type="tel"]').inputmask({"mask":"+7 (999) 999 9999"});
 
   $('form').submit(function() {
     var th = $(this);

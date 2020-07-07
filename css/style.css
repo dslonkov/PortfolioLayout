@@ -140,28 +140,12 @@ p {
 	z-index: 20;
 	left: 50%;
 	transform: translate(-50%, 0);
-	top: 10%;
+	top: 30%;
 	width: 400px;
 	height: auto;
 	overflow: auto;
 	background-color: #8993ad;
 	padding: 50px 0;
-}
-
-.form__sent {
-	display: none;
-	position: fixed;
-	z-index: 20;
-	left: 50%;
-	transform: translate(-50%, 0);
-	top: 10%;
-	width: 300px;
-	height: auto;
-	overflow: auto;
-	background-color: #8993ad;
-	padding: 50px 0;
-	font-size: 25px;
-	text-align: center;
 }
 
 .form__name {
@@ -200,13 +184,6 @@ p {
 	color: #ff4e2e;;
 }
 
-.error {
-	display: block;
-	background-color: #fff;
-	color: red;
-	margin-top: 10px;
-}
-
 .form__name-input  {
 	display: inline-block;
 }
@@ -221,7 +198,7 @@ p {
 	z-index: 20;
 	left: 50%;
 	transform: translate(-50%, 0);
-	top: 10%;
+	top: 30%;
 	width: 400px;
 	height: auto;
 	overflow: auto;
@@ -264,7 +241,7 @@ p {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.8);
-	z-index: 5;
+	z-index: 15;
 	display: none;
 }
 
@@ -539,10 +516,11 @@ p {
 	position: relative;
 	background-color: #ebebeb;
 	background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
-	padding: 80px 500px;
+	padding: 80px 0px 80px 230px;
 }
 
 .prices__container-heading {
+	max-width: 970px;
 	color: #ffffff;
 	font-size: 45px;
 	font-weight: 700;
@@ -552,6 +530,7 @@ p {
 }
 
 .prices__container-subtext {
+	max-width: 970px;
 	display: inline-block;
 	color: #ffffff;
 	font-size: 18px;
@@ -620,13 +599,15 @@ p {
 }
 
 .footer {
-	margin-top: 76px;
+	margin-top: 80px;
 }
 
 .footer__container {
+	max-width: 1170px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
+	padding-left: 0px;
 }
 
 .footer-nav {
@@ -651,6 +632,7 @@ p {
 .footer__container-contacts {
 	display: flex;
 	flex-direction: column;
+	margin-left: 70px;
 }
 
 .footer__contacts-tel {
@@ -660,8 +642,8 @@ p {
 	color: #000000;
 	font-size: 25px;
 	font-weight: 400;
-	margin-bottom: 35px;
-	padding-left: 25px;
+	margin-bottom: 30px;
+	padding-left: 35px;
 }
 
 .footer__contacts-mail {
@@ -672,7 +654,7 @@ p {
 	font-size: 25px;
 	font-weight: 400;
 	margin-bottom: 35px;
-	padding-left: 35px;
+	padding-left: 40px;
 }
 
 .footer__contacts-btn {
