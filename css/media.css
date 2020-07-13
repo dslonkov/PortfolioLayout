@@ -34,18 +34,19 @@
     width: 300px;
     height: 300px;
     padding: 20px 0;
+    top: 10%;
   }
 
   .form__name {
     margin-bottom: 40px;
     font-size: 20px;
-    
+    text-align: center;
   }
   
   .form__phone {
     margin-bottom: 40px;
     font-size: 20px;
-    
+    text-align: center;
   }
   
   .form__btn {
@@ -461,6 +462,32 @@
     margin-top: 13px;
     text-align: center;
   }
+
+  .form {
+    width: 200px;
+    height: 220px;
+    padding: 20px 0;
+    top: 10%;
+  }
+
+  .form__name {
+    margin-bottom: 30px;
+    font-size: 15px;
+    
+  }
+  
+  .form__phone {
+    margin-bottom: 30px;
+    font-size: 15px;
+    
+  }
+  
+  .form__btn {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }  
+
 
   .btn-info {
     width: 280px;
